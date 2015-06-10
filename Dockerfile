@@ -8,8 +8,8 @@ RUN yum install -y python-setup-tools python-pbr python python-pip
 RUN pip install git-review ipython
 
 # Clone all repos
-RUN cd ~ \
-    git clone https://review.openstack.org/stackforge/bansho \
-    git clone https://review.openstack.org/stackforge/surveil \
+RUN cd ~ && \
+    git clone https://review.openstack.org/stackforge/bansho && \
+    git clone https://review.openstack.org/stackforge/surveil && \
     git clone https://review.openstack.org/stackforge/python-surveilclient
 
