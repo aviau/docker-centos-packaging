@@ -7,6 +7,9 @@ RUN yum install -y https://rdoproject.org/repos/rdo-release.rpm
 RUN yum install -y python-setup-tools python-pbr python python-pip
 RUN pip install git-review ipython
 
+# Enable git colors
+RUN git config --global color.ui auto
+
 # Clone all repos
 RUN cd ~ && \
     git clone https://review.openstack.org/stackforge/bansho && \
