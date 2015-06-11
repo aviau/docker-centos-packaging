@@ -9,8 +9,5 @@ RUN pip install git-review ipython
 
 # Clone all repos
 RUN cd ~ && \
-    git clone https://review.openstack.org/stackforge/bansho && \
-    git clone https://review.openstack.org/stackforge/surveil && \
-    git clone https://review.openstack.org/stackforge/python-surveilclient && \
     git clone https://github.com/surveil/surveil-packaging.git
 
