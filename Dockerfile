@@ -11,5 +11,6 @@ RUN pip install git-review ipython
 RUN cd ~ && \
     git clone https://review.openstack.org/stackforge/bansho && \
     git clone https://review.openstack.org/stackforge/surveil && \
-    git clone https://review.openstack.org/stackforge/python-surveilclient
+    git clone https://review.openstack.org/stackforge/python-surveilclient && \
+    git clone https://github.com/surveil/surveil-packaging.git
 
